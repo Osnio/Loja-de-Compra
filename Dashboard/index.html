@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="../public/css/admin.css">
+</head>
+<body>
+    <input type="checkbox" name="" id="formEdit">
+    <form>
+        <h3>Novo usuário</h3>
+        <div>
+            <p>Nome</p>
+            <input type="text" required name="" id="pnome">
+        </div>
+        <div>
+            <p>Sobrenome</p>
+            <input type="text" required name="" id="snome">
+        </div>
+        <div>
+            <p>email</p>
+            <input type="email" required name="" id="email">
+        </div>
+        <div>
+            <p>Senha</p>
+            <input type="text" required name="" id="senha">
+        </div>
+        <button type="submit" id="validar">Adicionar usuário</button>
+    </form>
+    <div class="blur"></div>
+    <div class="container">
+        <header>
+            <h2>Bem vindo, Administrador(a)</h2>
+            <label for="formEdit" id="newUser">Novo usuário</label>
+        </header>
+        <div class="body">
+            <h4>Tabela dos Usuários</h4>
+            <p>&nbsp;</p>
+            <section id="alluser">
+                <table id="tabela">
+                    <tr id="key">
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Senha</th>
+                        <th>Permissões</th>
+                    </tr>
+                    
+                </table>
+            </section>
+        </div>
+    </div>
+    <button></button>
+
+    <script src="./script.js"></script>
+    <script src="../public/js/validateCadastro.js"></script>
+</body>
+</html>

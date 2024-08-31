@@ -1,0 +1,45 @@
+POST http://localhost:3333/formulario
+Content-Type: application/json
+
+{
+    "p_nome":"Teste1" ,
+    "s_nome":"blaaa", 
+    "email":"begavedasilva@gmaill.com",
+    "senha":"1212", 
+    "c_senha":"1212" 
+}
+
+###
+
+GET http://localhost:3333/allUsers
+
+###
+
+DELETE http://localhost:3333/eraseData
+Content-Type: application/json
+
+{
+    "id":7
+}
+
+###
+PUT http://localhost:3333/update
+Content-Type: application/json
+
+{
+    "id":4,
+    "novoNome":"Alfa",
+    "snome":"YEAH",
+    "pass":"tyu987",
+    "email":"gfghjklhgvc"
+
+}
+###
+
+POST http://localhost:3333/login
+Content-Type: application/json
+
+{
+    "email":"martinsosvanio15@gmail.com",
+    "senha":"12345"
+}

@@ -1,0 +1,106 @@
+@charset "utf-8";
+:root{
+    --cor0:#eef1f1;
+    --cor1:#26272b;
+    --cor2:#90a7a0;
+    --cor3:#8e6159;
+    --cor4:#cea05b;
+    --cor5:#EAEFF2;
+    --cor6:#fffafa;
+}
+body{
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.cadastro{
+    width: 100%;
+    height: 100vh;
+    padding: 50px 20px;
+    background-color:var(--cor1);;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    width: 40%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: solid; */
+}
+.left h1{
+    width: 75.6%;
+    color: var(--cor4);
+}
+.right{
+    width: 35%;
+    height: max-content;
+    display: flex;
+    padding: 0 0 30px 50px;
+    background-color: #26272bac;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px black;
+}
+.right h1{
+    text-align: center;
+    color: var(--cor4);
+    padding: 5px 0;
+}
+
+.box1 input[type ="text"], .box1 input[type ="password"], .box1 input[type ="email"]{
+    width: 80%;
+    border-color: var(--cor2);
+    border: none;
+    background: var(--cor3);
+    border-radius: 6.9px;
+    padding: 10px 5px;
+}
+.box1 input[type ="submit"]{
+    width: 84%;
+    margin-top: 10px;
+    border-radius: 6.9px;
+    padding: 10px 5px;
+    background-color: var(--cor4);
+    color: snow;
+    cursor: pointer;
+}
+.box1 input[type ="submit"]:hover{
+    width: 89%;
+    background-color: var(--cor1);
+    border-color: var(--cor5);
+    transition:background 0.2ms ease-in-out;
+}
+.box1 h4{
+    color: var(--cor5);
+    margin: 10px 0;
+}
+
+::-webkit-input-placeholder{
+    color:snow;
+}
+
+.box1.success input{
+    border:  3px solid #4eca64;
+}
+.box1.error input{
+    border: solid 3px #db5a5a;
+}
+.box1 i{
+    visibility: hidden;
+}
+.box1 small{
+    visibility: hidden;
+    color: #db5a5a;
+}
+.box1.success i .img-success{
+    visibility: visible;
+}
+.box1.error i .img-error, .box1.error small{
+    visibility: visible;
+}

@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+:root{
+    --cor0:#eef1f1;
+    --cor1:#26272b;
+    --cor2:#90a7a0;
+    --cor3:#8e6159;
+    --cor4:#cea05b;
+    --cor5:#EAEFF2;
+    --cor6:#fffafa;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: var(--cor6);
+}
+header{
+    width: 100%;
+    height: max-content;
+    /* border: 2px solid yellow; */
+    justify-content: space-around;
+    background-color: var(--cor5);
+    position: fixed;
+    box-shadow: 2px 2px 2px black;
+    display: flex;
+}
+header h1 a{
+    text-decoration: none;
+    color: var(--cor1);
+}
+.part{
+    width: 35%;
+    /* border: 2px solid; */
+    
+}
+.part>ul{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    list-style: none;    
+    padding: 15px 0  0px 0 ;
+}
+.part>ul>li>a{
+    text-decoration: none;
+    color: var(--cor1);
+}
+.tt>a{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--cor1);
+    /* background-color: red; */
+}
+.yo{
+    display: none;
+    position: absolute;
+}
+.yo>li>a{
+    text-decoration: none;
+    color: var(--cor1);
+    padding: 10px;
+    display: block;
+}
+.hh:hover .yo {
+    display: block;
+    opacity: 1;
+    background-color: var(--cor5);
+}
+.yo>li>a:hover{
+    background-color: var(--cor2);
+}
+
+
+.boy{
+    display: flex;
+    gap: 20px;
+    /* border: solid 2px; */
+}
+.yob>a, .cat>a{
+    height: 20px;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 7px 10px 0 5px;
+    color: var(--cor1);
+    /* background-color: #90a7a0; */
+}
+.yob, .cat{
+    display: flex;
+}
+.lee{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    padding: 70px 20px 0 0px;
+    justify-content: center;
+}
+.cong{
+    width: 40%;
+    height: max-content;
+    padding: 60px 0 60px 40px ;
+    background-color: var(--cor5);
+    
+}
+.cong>h4{
+    width: 30.5%;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 25px;
+    background-color: var(--cor4);
+    border: solid 2px;
+}
+.cong>h1{
+    font-size: 45px;
+}
+.cong>p{
+    text-align: justify;
+    padding: 20px 0;
+}
+.cong>a{
+    width: 25%;
+    text-decoration: none;
+    border-radius: 9px;
+    color: snow;
+    background-color: var(--cor1);
+    margin: 10px 0;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+.Male{
+    width:42.8%;
+    height: 57.5vh;
+    align-items: center;
+    display: flex;
+    background-color: var(--cor5);
+    
+}
+
+.world{
+    width: 100%;
+    padding: 20x 0;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+}
+.sales{
+    width: 80%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.priest1{
+    width: 20%;
+    height:50vh;
+    margin: 20px 0;
+    padding: 20px 0;
+    box-shadow: 0px 0.5px 1px black;
+    justify-content: center;
+    align-items: center;
+    display: block;
+
+}
+.nurse{
+    width:93%;
+    height: 30vh;
+    
+    padding: 5px;
+    display: flex;
+    background-color: var(--cor5);
+    border-radius: 5px;
+    align-items: center;
+    margin-left: 0px;
+    justify-content: center;
+}
+.nurse1{
+    width:98%;
+    height: 31vh;
+    
+    background-color: var(--cor5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nurse2{
+    width:98%;
+    height: 31vh;
+    background-color: var(--cor5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.nurse2>img, .nurse1>img {
+    margin-top: 30px;
+   
+}
+.teste{
+    width: 98%;
+    height: max-content;
+    padding-left: 2px;
+    padding-right: 3px;
+    margin-top: 10px;
+
+}
+
+.teste>p{
+    text-align: justify;
+    margin: 8px 0;
+}
+
+.wond{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.big{
+    width: 45%;
+    text-align: center;
+    border: solid 1px;
+    border-radius: 10px;
+    background-color: var(--cor5);
+    cursor: pointer;
+}
+.big>button{
+    border: none;
+    padding: 5px;
+    text-align: center;
+    background-color: transparent;
+    justify-content: center;
+    cursor: pointer;
+}
+#carIcon{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    transition: 1s;    
+}
+#carIcon img{
+    width: 100%;
+    height: 100%;
+}
+.endIcon{
+    width: 80px !important;
+    height: 80px !important;
+}
